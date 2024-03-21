@@ -3,7 +3,7 @@
     checkable
     checkStrictly
     :tree-data="treeData"
-    :expanded-keys="expandedKeys"
+    :default-expanded-keys="['0-0-0', '0-0-1']"
     :checked-keys="checkedKeys"
     @check="onCheck"
   >
@@ -42,7 +42,6 @@ export default {
     return {
       treeData,
       keyEntities: new Map(),
-      expandedKeys: ['0-0-0', '0-0-1'],
       checkedKeys: []
     };
   },
